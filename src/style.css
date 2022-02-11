@@ -16,12 +16,12 @@ h1{
     font-weight: bolder;
 }
 
-h2, .temperature-status-now{
+h2, #temperature-status-now{
     font-size: 20px;
     font-weight: bolder;
 }
 
-.temperature-number-now{
+#temperature-number-now{
     font-size: 50px;
     font-weight: bolder;
 } 
@@ -38,9 +38,12 @@ li{
     padding: 0px;
 }
   
-.units{
+#units{
+    font-size: 20px;
     position: relative;
     top: -20px;
+    
+
 }
 img {
     margin-left: 15px;
