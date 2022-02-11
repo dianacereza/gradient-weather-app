@@ -1,3 +1,42 @@
-h1 {
-    color: blue;
+body{
+    font-family:montserrat;
+}
+
+.weather-app{
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    border: 1px solid #222831;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2, .temperature-status-now{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+ul{
+    margin-left:  20px;
+    padding-left: 30px;
+}
+
+li{
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px;
+}
+
+.temperature-number-now{
+    font-size: 30px;
+    font-weight: bolder;
+} 
+
+img {
+    margin: 60px;
 }
