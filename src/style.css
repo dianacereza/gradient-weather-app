@@ -22,7 +22,7 @@ h2, .temperature-status-now{
 }
 
 .temperature-number-now{
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bolder;
 } 
 
@@ -38,9 +38,12 @@ li{
     padding: 0px;
 }
   
-
+.units{
+    position: relative;
+    top: -20px;
+}
 img {
-    margin: 0px;
+    margin-left: 15px;
     width: 100px;
      height: 100px;
      border-radius: 50%;
