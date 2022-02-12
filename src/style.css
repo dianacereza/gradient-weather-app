@@ -11,6 +11,26 @@ body{
     border-color: black
 }
 
+#search-form{
+    margin-bottom: 50px; 
+}
+
+#search-city-input{
+    background-color:white;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    padding: 12px;
+}
+
+#submit-search, #current-location{
+    background-color:white;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    padding: 12px;
+}
+
 h1{
     font-size: 30px;
     font-weight: bolder;
@@ -19,6 +39,11 @@ h1{
 h2, #temperature-status-now{
     font-size: 20px;
     font-weight: bolder;
+}
+
+#date{
+    font-size: 20px;
+    font-weight:normal;
 }
 
 #temperature-number-now{
@@ -41,6 +66,7 @@ li{
   
 #units{
     font-size: 20px;
+    font-weight: normal;
     position: relative;
     top: -20px;
     
