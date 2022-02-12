@@ -8,7 +8,8 @@ body{
     margin-bottom: 10px;
     padding: 30px;
     border-radius: 20px;
-    border-color: black
+    border-color: black;
+    
 }
 
 #search-form{
@@ -55,6 +56,7 @@ h2, #temperature-status-now{
 ul{
     margin-left:  0px;
     padding-left: 0px;
+    margin-bottom: 40px;
 }
 
 li{
@@ -77,16 +79,49 @@ color:grey;
 text-decoration: none;
 }
 
-img {
+#icon {
+    align-items: center;
     margin-top: 0px;
     margin-left: 0px;
     width: 120px;
     height: 120px;
     }
 
+hr{
+    
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 1px;
+    }
 
+.weather-forecast{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+}
+
+.forecast-date{
+    font-size: 16px;
+}
+
+.forecast-temp{
+    font-size: 14px ;
+}
+
+.forecast-temp-max{
+    color: black;
+}
+
+.forecast-temp-min{
+    color:grey;
+}
+
+#forecast-icon{
+    width:80px;
+
+}
 .contact{
     padding: 10px 10px;
     text-align: center;
     font-size: 12px;
 }
+
