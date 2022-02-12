@@ -70,8 +70,13 @@ li{
     position: relative;
     top: -20px;
     
-
 }
+
+#units .active{
+color:grey;
+text-decoration: none;
+}
+
 img {
     margin-left: 15px;
     width: 100px;
