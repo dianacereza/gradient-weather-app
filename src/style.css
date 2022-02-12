@@ -4,7 +4,7 @@ body{
 
 .card {
     display: block;
-    margin:  110px auto ;
+    margin:  80px auto ;
     margin-bottom: 10px;
     padding: 30px;
     border-radius: 20px;
@@ -78,12 +78,13 @@ text-decoration: none;
 }
 
 img {
-    margin-left: 15px;
-    width: 100px;
-     height: 100px;
-     border-radius: 50%;
-     background: #5cb85c;
-}
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 120px;
+    height: 120px;
+    }
+
+
 .contact{
     padding: 10px 10px;
     text-align: center;
