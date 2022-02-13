@@ -13,6 +13,27 @@ function formatDate(timestamp){
     return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast(){
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = `
+    <div id="forecast-row" class="row">
+        <div class="col-3">
+            <div class="forecast-date">Tomorrow´s Weather 👉</div> 
+        </div>
+            <div class="col-3"></div>
+                <div class="col-3">
+                        <div class="forecast-temp"> <span class="forecast-temp-max">17° </span> | <span class="forecast-temp-min">7°</span></div>
+                </div>
+            <div class="col-3">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" 
+                    alt=""
+                    id="forecast-icon"
+                    />
+                </div>
+         </div>
+ `;
+}
+
 function showTemperature(response){
 
 celsiusTemperature = response.data.main.temp;
@@ -34,12 +55,13 @@ windStatus.innerHTML =Math.round(response.data.wind.speed);
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
-
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+let iconElement = document.querySelector("#icon"); 
+iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
 iconElement.setAttribute("alt", response.data.weather[0].description);
 
+
 }
+
 
 function searchCity(city){
    let apiKey="338ad8d174dc01460bda54dd03bef62b";
@@ -97,4 +119,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+displayForecast();
 searchCity("New York");

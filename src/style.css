@@ -1,6 +1,6 @@
-body{
+body {
     font-family:montserrat;
-}
+    }
 
 .card {
     display: block;
@@ -8,15 +8,14 @@ body{
     margin-bottom: 10px;
     padding: 30px;
     border-radius: 20px;
-    border-color: black;
-    
+    border-color: black;  
 }
 
-#search-form{
+#search-form {
     margin-bottom: 50px; 
 }
 
-#search-city-input{
+#search-city-input {
     background-color:white;
     border-radius: 20px;
     border-width: 1px;
@@ -24,7 +23,7 @@ body{
     padding: 12px;
 }
 
-#submit-search, #current-location{
+#submit-search, #current-location {
     background-color:white;
     border-radius: 20px;
     border-width: 1px;
@@ -32,49 +31,47 @@ body{
     padding: 12px;
 }
 
-h1{
-    font-size: 30px;
+h1 {
+    font-size: 27px;
     font-weight: bolder;
 }
 
-h2, #temperature-status-now{
-    font-size: 20px;
+#temperature-status-now {
+    font-size: 16px;
     font-weight: bolder;
 }
 
-#date{
+#date {
     font-size: 20px;
     font-weight:normal;
 }
 
-#temperature-number-now{
+#temperature-number-now {
     font-size: 50px;
     font-weight: bolder;
 } 
 
-
-ul{
+ul {
     margin-left:  0px;
     padding-left: 0px;
     margin-bottom: 40px;
 }
 
-li{
+li {
     text-transform: capitalize;
     list-style: none;
     margin: 0;
     padding: 0px;
 }
   
-#units{
+#units {
     font-size: 20px;
     font-weight: normal;
     position: relative;
     top: -20px;
-    
-}
+    }
 
-#units .active{
+#units .active {
 color:grey;
 text-decoration: none;
 }
@@ -87,41 +84,22 @@ text-decoration: none;
     height: 120px;
     }
 
-hr{
-    
+hr {
     border: 1px solid rgb(5, 5, 5);
     border-radius: 1px;
     }
 
-.weather-forecast{
-    margin-top: 30px;
-    text-align: center;
+#forecast-row {
+    align-items: center;
+}
+
+.weather-forecast {
+    font-size: 16px ;
     color: black;
 }
 
-.forecast-date{
-    font-size: 16px;
-}
-
-.forecast-temp{
-    font-size: 14px ;
-}
-
-.forecast-temp-max{
-    color: black;
-}
-
-.forecast-temp-min{
-    color:grey;
-}
-
-#forecast-icon{
-    width:80px;
-
-}
-.contact{
+.contact {
     padding: 10px 10px;
     text-align: center;
     font-size: 12px;
 }
-

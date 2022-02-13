@@ -18,8 +18,8 @@
         <div class="card-body">
             <form id="search-form">
                 <input id="search-city-input" type="text" placeholder="Enter your City"/>
-                <input type="submit" id="submit-search" value="Search" />
-                <button class= "current" id="current-location">Current</button>
+                <input type="submit" id="submit-search" value=" 🔍 City " />
+                <button class= "current" id="current-location"> 📍 Your Location </button>
             </form>
             <div class="row">
                 <div class="col-3">
@@ -35,7 +35,7 @@
                             Few Clouds
                         </li>
                         <li> Humidity: 
-                        <span id= "humidity-now">0%</span>%
+                        <span id= "humidity-now">0</span>%
                         </li>Wind:
                         <span id= "wind-now">0%</span>Km/H
                         </li>
@@ -50,21 +50,7 @@
                        </div>
                   </div>  
                   <hr> 
-                  <div class="weather-forecast">
-                      <div class="row">
-                          <div class="col-2">
-                              <div class="forecast-date">Monday</div> 
-                              <img src="http://openweathermap.org/img/wn/10d@2x.png" 
-                              alt=""
-                              id="forecast-icon"
-                              >
-                              <div class="forecast-temp">
-                                <span class="forecast-temp-max">
-                                17°</span>|
-                                <span class="forecast-temp-min">
-                                7°</span>
-                              </div>
-                          </div>
+                  <div class="weather-forecast" id="forecast">
                       </div>
                   </div>
                 </div>
@@ -82,4 +68,3 @@
 <script src="src/app.js"></script>
 </body>
 </html>
-
