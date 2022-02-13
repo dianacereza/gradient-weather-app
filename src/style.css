@@ -1,5 +1,7 @@
 body {
     font-family:montserrat;
+    height: 100px;
+    width: 100%;
     }
 
 .card {
@@ -8,7 +10,8 @@ body {
     margin-bottom: 10px;
     padding: 30px;
     border-radius: 20px;
-    border-color: black;  
+    border-color: black; 
+    border-style: solid;
 }
 
 #search-form {
@@ -25,19 +28,26 @@ body {
 
 #submit-search, #current-location {
     background-color:white;
-    border-radius: 20px;
+    border-radius: 30px;
     border-width: 1px;
     border-color: black;
     padding: 12px;
 }
 
 h1 {
+    margin-top: 0px;
     font-size: 35px;
     font-weight: bolder;
 }
 
-#temperature-status-now {
+#emoji {
     font-size: 25px;
+
+
+}
+
+#temperature-status-now {
+    font-size: 23px;
     font-weight: bolder;
 }
 
@@ -47,7 +57,7 @@ h1 {
 }
 
 #temperature-number-now  {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bolder;
 } 
 
@@ -78,23 +88,25 @@ text-decoration: none;
 }
 
 #icon {
-    align-items: center;
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 120px;
-    height: 120px;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-color: black;
+    border-style:none;
+    background-color: rgb(241, 233, 203);
     }
 
 hr {
-    border: 1px solid rgb(5, 5, 5);
-    border-radius: 1px;
-    }
+    border-style: solid;
+}
 
 #forecast-row {
     align-items: center;
 }
 
 .weather-forecast {
+    margin-top: 30px;
     font-size: 16px ;
     color: black;
 }
@@ -106,10 +118,19 @@ hr {
 }
 
 #forecast-temp {
-font-size: 30px;
+font-size: 25px;
 font-weight: bolder;
+
 }
 
 .forecast-temp-min {
 color: grey;
+}
+
+#forecast-icon{
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-style:none;
 }

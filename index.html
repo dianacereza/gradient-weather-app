@@ -14,23 +14,30 @@
 </head>
 <body>
     <div class="container" ></div>
-    <div class="card" style="width: 40rem;">
+    <div class="card" id=info style="width: 40rem;">
         <div class="card-body">
             <form id="search-form">
                 <input id="search-city-input" type="text" placeholder="Enter your City"/>
-                <input type="submit" id="submit-search" value=" 🔍 City " />
-                <button class= "current" id="current-location"> 📍 Your Location </button>
+                <input type="submit" id="submit-search" value=" 🔍City " />
+                <button class= "current" id="current-location"> 📍Your Location </button>
             </form>
             <div class="row">
-                <div class="col-3">
-                 <h1 id="city">New York</h1> 
+                <h1 id="city">New York</h1> 
+                <div class="col-4">
                 <h2 id="date"></h2>
+                <div class="col-4">
+                    <img src=""
+                    alt=""
+                    id="icon"
+                    >
+                   </div>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-3">
+                <div class="col-4"></div>
+                <div class="col-4">
                     <ul>
-                        <li><span id="temperature-number-now">17</span><span id="units"><a href="#" style="text-decoration:none" id="celsius-link" class="active">°C</a>|<a href="#" style="text-decoration:none" id="fahrenheit-link" class="active">°F</a></span>
+                        <li><span id="temperature-number-now">17</span><span id="units"><a href="#" style="text-decoration:none" id="celsius-link" class="active">°C</a>|<a href="#" style="text-decoration:none" id="fahrenheit-link" class="active">°F</a></span> 
                         </li>
+                        <li id="emoji"></li>
                         <li id="temperature-status-now">
                             Few Clouds
                         </li>
@@ -41,14 +48,6 @@
                         </li>
                     </ul>
                 </div>
-                  <div class="col-3">
-                    <div class="col-3">
-                        <img src=""
-                        alt=""
-                        id="icon"
-                        >
-                       </div>
-                  </div>  
                   <hr> 
                   <div class="weather-forecast" id="forecast">
                       </div>
