@@ -32,12 +32,12 @@ body {
 }
 
 h1 {
-    font-size: 27px;
+    font-size: 35px;
     font-weight: bolder;
 }
 
 #temperature-status-now {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
@@ -46,7 +46,7 @@ h1 {
     font-weight:normal;
 }
 
-#temperature-number-now {
+#temperature-number-now  {
     font-size: 50px;
     font-weight: bolder;
 } 
@@ -54,7 +54,7 @@ h1 {
 ul {
     margin-left:  0px;
     padding-left: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 li {
@@ -63,9 +63,10 @@ li {
     margin: 0;
     padding: 0px;
 }
+
   
 #units {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     position: relative;
     top: -20px;
@@ -102,4 +103,13 @@ hr {
     padding: 10px 10px;
     text-align: center;
     font-size: 12px;
+}
+
+#forecast-temp {
+font-size: 30px;
+font-weight: bolder;
+}
+
+.forecast-temp-min {
+color: grey;
 }
