@@ -69,21 +69,18 @@ function changeIcon(iconColor){
 document.getElementById("icon").style.background = iconColor;
 }
 
-
-if (celsiusTemperature <= 10) {
+if (celsiusTemperature <= 11) {
     updateHeading  `🥶`;
-    changeBackground `radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%`;
-    changeCard `radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 50%, rgb(255, 247, 228) 120%`;
-    changeIcon `rgb(255,248,218)`;
-
+    changeBackground `radial-gradient(circle at 10% 20%, rgb(242, 235, 243) 0%, rgb(234, 241, 249) 90.1%`;
+    changeCard `linear-gradient(to bottom, #f3e7e9 0%, #b6cff5 160%, #b6cff5 250%)`;
+    changeIcon `rgb(206, 216, 245)`;
 
   } else {
-    if (celsiusTemperature >= 11 & celsiusTemperature < 24 ) {
+    if (celsiusTemperature >= 12 & celsiusTemperature < 24 ) {
         updateHeading  `☺️`;
         changeBackground `linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%, rgb(255, 216, 194) 92.2%`;
-        changeCard `linear-gradient(to top, #fff1eb 0%, #ace0f9 100%`;
-        changeIcon `rgb(243, 210, 182)`;
-
+        changeCard `linear-gradient(to bottom, #fff1eb 0%, #ace0f9 100%)`;
+        changeIcon `rgb(192, 228, 240)`;
  
     } else {
         updateHeading `😎`;

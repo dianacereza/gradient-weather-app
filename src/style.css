@@ -44,7 +44,7 @@ h1 {
     border-radius: 50%;
     border-color: black;
     border-style:none;
-    background-color: rgb(241, 233, 203);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
 }
 
 #temperature-number-now {
@@ -93,18 +93,25 @@ li {
 #forecast-row {
     align-items: center;
 }
+.weather-forecast {
+    margin-top: 30px;
+    font-size: 16px ;
+    color:black;
+ }
+
+#forecast-icon {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-style:none;
+}
 
 #forecast-temp {
     font-size: 25px;
     font-weight: bolder;
  }
   
-.weather-forecast {
-   margin-top: 30px;
-   font-size: 16px ;
-   color: black;
-}
-
 .forecast-temp-min {
    color: grey;
 }
