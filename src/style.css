@@ -6,12 +6,12 @@ body {
 
 .card {
     display: block;
-    margin:  60px auto ;
-    margin-bottom: 10px;
+    margin:  40px auto ;
+    margin-bottom: 0px;
     padding: 30px;
     border-radius: 20px;
     border-style:none;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%)
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 }
 
 #search-form {
@@ -68,7 +68,7 @@ hr {
 ul {
     margin-left:  0px;
     padding-left: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 li {
