@@ -6,27 +6,19 @@ body {
 
 .card {
     display: block;
-    margin:  80px auto ;
+    margin:  60px auto ;
     margin-bottom: 10px;
     padding: 30px;
     border-radius: 20px;
-    border-color: black; 
-    border-style: solid;
+    border-style:none;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%)
 }
 
 #search-form {
     margin-bottom: 50px; 
 }
 
-#search-city-input {
-    background-color:white;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: black;
-    padding: 12px;
-}
-
-#submit-search, #current-location {
+#search-city-input, #submit-search, #current-location {
     background-color:white;
     border-radius: 30px;
     border-width: 1px;
@@ -40,51 +32,9 @@ h1 {
     font-weight: bolder;
 }
 
-#emoji {
-    font-size: 25px;
-
-
-}
-
-#temperature-status-now {
-    font-size: 23px;
-    font-weight: bolder;
-}
-
 #date {
     font-size: 20px;
     font-weight:normal;
-}
-
-#temperature-number-now  {
-    font-size: 60px;
-    font-weight: bolder;
-} 
-
-ul {
-    margin-left:  0px;
-    padding-left: 0px;
-    margin-bottom: 50px;
-}
-
-li {
-    text-transform: capitalize;
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-}
-
-  
-#units {
-    font-size: 16px;
-    font-weight: normal;
-    position: relative;
-    top: -20px;
-    }
-
-#units .active {
-color:grey;
-text-decoration: none;
 }
 
 #icon {
@@ -95,42 +45,72 @@ text-decoration: none;
     border-color: black;
     border-style:none;
     background-color: rgb(241, 233, 203);
-    }
+}
+
+#temperature-number-now {
+    font-size: 60px;
+    font-weight: bolder;
+} 
+
+#emoji {
+    font-size: 25px;
+}
+
+#temperature-status-now {
+    font-size: 25px;
+    font-weight: bolder;
+}
 
 hr {
     border-style: solid;
+}
+
+ul {
+    margin-left:  0px;
+    padding-left: 0px;
+    margin-bottom: 80px;
+}
+
+li {
+    text-transform: capitalize;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+ 
+#units {
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: -20px;
+    }
+
+#units .active {
+    color:grey;
+    text-decoration: none;
 }
 
 #forecast-row {
     align-items: center;
 }
 
-.weather-forecast {
-    margin-top: 30px;
-    font-size: 16px ;
-    color: black;
-}
-
-.contact {
-    padding: 10px 10px;
-    text-align: center;
-    font-size: 12px;
-}
-
 #forecast-temp {
-font-size: 25px;
-font-weight: bolder;
-
+    font-size: 25px;
+    font-weight: bolder;
+ }
+  
+.weather-forecast {
+   margin-top: 30px;
+   font-size: 16px ;
+   color: black;
 }
 
 .forecast-temp-min {
-color: grey;
+   color: grey;
 }
 
-#forecast-icon{
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border-style:none;
+.contact {
+   padding: 10px 10px;
+   text-align: center;
+   font-size: 12px;
 }

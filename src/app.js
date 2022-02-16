@@ -25,10 +25,11 @@ function displayForecast(response){
             <div class="forecast-date">Tomorrow's Weather</div> 
         </div>
         <div class="col-4">
-                <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" 
+                <img 
+                    src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" 
                     alt=""
                     id="forecast-icon"
-                    />
+                />
                 </div>
             <div class="col-4">
                 <div id="forecast-temp"> <span class="forecast-temp-max">${Math.round(forecastDay.temp.max)}°C </span>  |  <span class="forecast-temp-min">${Math.round(forecastDay.temp.min)}°C </span></div>
@@ -70,24 +71,27 @@ document.getElementById("icon").style.background = iconColor;
 
 
 if (celsiusTemperature <= 10) {
-    updateHeading ("🥶");
-    changeBackground ` radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%`;
-    changeCard `radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%`;
-    changeIcon `rgb(242,233,)`;
+    updateHeading  `🥶`;
+    changeBackground `radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%`;
+    changeCard `radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 50%, rgb(255, 247, 228) 120%`;
+    changeIcon `rgb(255,248,218)`;
+
+
   } else {
     if (celsiusTemperature >= 11 & celsiusTemperature < 24 ) {
-        updateHeading("☺️");
+        updateHeading  `☺️`;
         changeBackground `linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%, rgb(255, 216, 194) 92.2%`;
         changeCard `linear-gradient(to top, #fff1eb 0%, #ace0f9 100%`;
         changeIcon `rgb(243, 210, 182)`;
+
+ 
     } else {
-        updateHeading("😎");
+        updateHeading `😎`;
         changeBackground `radial-gradient(circle at 10% 20%, rgb(209, 231, 235) 7.4%, rgb(238, 219, 199) 51.4%,rgb(255, 109, 58) 180.2%, rgb(255, 159, 122) 82.6%`;
         changeCard `linear-gradient(111.4deg, rgb(209, 231, 235) 7.4%, rgb(238, 219, 199) 51.4%, rgb(255, 159, 122) 82.6%, rgb(255, 109, 58) 160.2%`;
         changeIcon `rgb(243, 210, 182)`;
     }
   }
-
 
 let cityElement = document.querySelector("#city");
 cityElement.innerHTML = response.data.name;
@@ -107,8 +111,6 @@ dateElement.innerHTML = formatDate(response.data.dt * 1000);
 let iconElement = document.querySelector("#icon"); 
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
 iconElement.setAttribute("alt", response.data.weather[0].description);
-
-
 
 getForecast(response.data.coord);
 
@@ -147,22 +149,6 @@ function displayFahrenheitTemperature(event){
     fahrenheitLink.classList.add("active");
     let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
     temperatureNumber.innerHTML = Math.round(fahrenheitTemperature);
-
-    
-    function updateEmoji(newEmoji){
-        let mood = document.getElementById("emoji");
-        mood.innerHTML = newEmoji;
-        }
-        if ( celsiusTemperature < 6) {
-            updateHeading ("🥶");
-          } else {
-            if (celsiusTemperature>= 7 & celsiusTemperature < 18 ) {
-                updateHeading("☺️");
-            } else {
-                updateHeading("😎");
-            }
-          }
-
 }
 
 function displayCelsiusTemperature(event){
@@ -171,7 +157,6 @@ function displayCelsiusTemperature(event){
     celsiusLink.classList.add("active");
     let temperatureNumber = document.querySelector("#temperature-number-now");
     temperatureNumber.innerHTML = Math.round(celsiusTemperature);
-
 }
 
 let celsiusTemperature =null;
